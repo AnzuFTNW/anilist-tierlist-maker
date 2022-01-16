@@ -2,6 +2,8 @@
 
 [live demo](https://anzuftnw.github.io/tl/)
 
+*not offically endorsed by AniList*
+
 
 # Planned Features / Ideas
 - Allowing more customization of the tierlist itself e.g. color, amount of rows, tier-name
