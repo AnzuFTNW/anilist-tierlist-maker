@@ -1,5 +1,7 @@
 # `V0.1` TierList - A tierlist maker incorporating AniList's API
 
+[live demo](https://anzuftnw.github.io/tl/)
+
 
 # Planned Features / Ideas
 - Allowing more customization of the tierlist itself e.g. color, amount of rows, tier-name
