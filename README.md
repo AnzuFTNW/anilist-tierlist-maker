@@ -27,6 +27,6 @@ _not offically endorsed by AniList_
 # Changelog
 
 - `2022/01/22` - _V1.0_
-  - Initial entry
+  - Full release
 - `2022/01/06` - _V0.1_
   - Initial entry
