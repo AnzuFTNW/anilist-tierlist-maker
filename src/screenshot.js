@@ -4,10 +4,12 @@ function doScreenShot() {
   const tierlist = document.getElementById("tierlist");
   const outputWindow = document.getElementById("output");
 
-  html2canvas(tierlist, { allowTaint: true }).then(function (canvas) {
-    outputWindow.appendChild(canvas);
-    outputWindow.style.display = "flex";
-  });
+  html2canvas(tierlist, { allowTaint: true, backgroundColor: null }).then(
+    function (canvas) {
+      outputWindow.appendChild(canvas);
+      outputWindow.style.display = "flex";
+    }
+  );
 }
 
 function closeWindow() {
