@@ -2,7 +2,7 @@
 
 _not offically endorsed by AniList_
 
-[live demo](https://anzuftnw.github.io/tl/)
+[live demo](https://anzuftnw.github.io/live-demo/tl/)
 
 # How To
 
