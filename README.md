@@ -1,4 +1,4 @@
-# `V1.0` TierList - Tierlist maker using AniList's API
+# `V1.1` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
@@ -23,9 +23,16 @@ _not offically endorsed by AniList_
 # Known Bugs
 
 - It's possible to mix animanga entrys and characters but I see no reason to remove this
+- Firefox: Rank Text (S, A, B, etc.) is not centered
 
 # Changelog
 
+- `2022/01/22` - _V1.1_
+  - Added more cross browser consistency
+  - Changed default rank text color
+  - Reduced delay for card pool to close
+  - Drawer automatically extends on submit
+  - Allow enter key to submit search query
 - `2022/01/22` - _V1.0_
   - Full release
 - `2022/01/06` - _V0.1_
