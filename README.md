@@ -27,6 +27,11 @@ _not offically endorsed by AniList_
 
 # Changelog
 
+- `2022/01/27` - _V1.2_
+  - Added the ability to search characters through animanga entrys
+  - Added the ability to rank staff
+  - Changed how the pool menu behaves and added menu icon
+  - (Hopefully) Fixed a bug where certain cards were bigger in width than others
 - `2022/01/22` - _V1.1_
   - Added more cross browser consistency
   - Changed default rank text color
