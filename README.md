@@ -1,4 +1,4 @@
-# `V1.1` TierList - Tierlist maker using AniList's API
+# `V1.2` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
