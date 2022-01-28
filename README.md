@@ -1,4 +1,4 @@
-# `V1.3` TierList - Tierlist maker using AniList's API
+# `V1.3.1` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
@@ -28,6 +28,8 @@ _not offically endorsed by AniList_
 
 # Changelog
 
+- `2022/01/28` - _V1.3.1_
+  - Fixed bugs with importing saves
 - `2022/01/27` - _V1.3_
   - Added ability to save/load progress to/from localstorage
   - Added ability to save/load progress to/from external file
