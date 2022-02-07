@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TierList</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- NAV -->
+      <nav id="nav">
+        <a href="" id="logo-wrap"><img src="" alt="" id="logo" /></a>
+        <div id="options"></div>
+        <div id="menu-icon"></div>
+      </nav>
+      <!-- CONTENT -->
+      <main id="content">
+        <section id="mode"></section>
+        <section id="pool"></section>
+      </main>
+      <!-- MENUS -->
+      <div class="menu-wrap">
+        <!-- MAIN MENU -->
+        <div id="main-menu" class="menu-container">
+          <header class="menu-header">
+            <span class="menu-title">Options</span>
+            <span class="menu-close">X</span>
+          </header>
+          <div class="menu-body">
+            <label class="menu-label">
+              API
+              <select id="api" class="menu-select">
+                <option id="anilist-api" value="anilist">AniList</option>
+              </select>
+            </label>
+            <label class="menu-label">
+              Mode
+              <select id="mode" class="menu-select">
+                <option id="tierlist-option" value="tierlist">Tierlist</option>
+                <option id="tournament-option" value="tournament">
+                  Tournament
+                </option>
+                <option id="duel-option" value="duel">Duel</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

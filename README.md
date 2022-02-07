@@ -1,4 +1,4 @@
-# `V1.3.1` TierList - Tierlist maker using AniList's API
+# `V1.4` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
@@ -6,7 +6,7 @@ _not offically endorsed by AniList_
 
 # How To
 
-- Select if you want to make a character/animanga/staff tierlist
+- Select what kind of tierlist you wanna make
 - Click on the top right menu icon to reveal the card-pool and trashbin
 - Drag and drop characters from the card-pool into your tierlist
 - Change the individual color and name of each tier/row
@@ -19,7 +19,11 @@ _not offically endorsed by AniList_
 
 # Planned Features / Ideas
 
+- Cooler UI
 - Allowing to screenshots through a button (CORS problems)
+- Tournament Mode :thinking:
+- Duel Mode :doublethinking:
+- Addiotional Search Modes = Seasonals
 
 # Known Bugs
 
@@ -28,6 +32,9 @@ _not offically endorsed by AniList_
 
 # Changelog
 
+- `2022/02/07` - _V1.4_
+  - Changed query types
+  - More ways to search for stuff now
 - `2022/01/28` - _V1.3.1_
   - Fixed bugs with importing saves
 - `2022/01/27` - _V1.3_

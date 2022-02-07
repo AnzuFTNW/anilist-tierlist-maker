@@ -1,0 +1,87 @@
+/* base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* fonts */
+@font-face {
+  font-family: "firacode";
+  src: url("firacode.ttf");
+}
+body {
+  font-family: "firacode";
+}
+
+/* vars */
+:root {
+  --color-foreground: #2f2f2f;
+  --color-background: #1f1f1f;
+}
+
+/* nav */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  background-color: var(--color-foreground);
+
+  width: 100%;
+
+  height: 50px;
+}
+
+/* content */
+html,
+body,
+#app,
+.menu-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  background-color: var(--color-background);
+}
+
+/* menu */
+.menu-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-foreground);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.menu-body {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+.menu-label {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.menu-select {
+  margin-left: 20px;
+}
