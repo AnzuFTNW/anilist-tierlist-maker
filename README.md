@@ -1,4 +1,4 @@
-# `V1.4` TierList - Tierlist maker using AniList's API
+# `V1.5` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
@@ -32,6 +32,15 @@ _not offically endorsed by AniList_
 
 # Changelog
 
+
+- `2023/02/09` - _V1.5_
+  - Changes to navigation behaviour
+  - Changes to card images and names
+  - Changes to drag and drop behaviour
+  - Fixed a bug that killed the row edit buttons after loading previously saved tierlists
+  - Known Bugs:
+    - Dragging cards back to the pool might cause stuttering
+    - After loading previously saved tierlists the row editor doesn't display proper values
 - `2022/02/07` - _V1.4_
   - Changed query types
   - More ways to search for stuff now
