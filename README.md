@@ -1,4 +1,4 @@
-# `V1.5` TierList - Tierlist maker using AniList's API
+# `V1.5.1` TierList - Tierlist maker using AniList's API
 
 _not offically endorsed by AniList_
 
@@ -6,15 +6,14 @@ _not offically endorsed by AniList_
 
 # How To
 
-- Select what kind of tierlist you wanna make
-- Click on the top right menu icon to reveal the card-pool and trashbin
+- Decide and search for whatever kind of tierlist you want to create
+- Submitting the search will open the card-pool and trashbin
 - Drag and drop characters from the card-pool into your tierlist
-- Change the individual color and name of each tier/row
-- You may also add or remove additional rows
+- Add/remove rows and/or change the color and name of each tier
 - Click on the top right gear of each tier/row to reveal it's menu
-- After you're done hit the screenshot button, right click the now appeard image and rightclick **Save Image As...**
+- After you're done click on the screenshot button, right click the image and select **Save Image As...**
 - Repeat
-- You can save/load/delete (locally) your progress in your browser through save menu in the top left corner
+- You can save/load/delete your progress locally in your browser through the save menu in the top left corner
 - You can also export/import your tierlist progress as a file if you want to switch browsers or clear your browser cache
 
 # Planned Features / Ideas
@@ -23,24 +22,30 @@ _not offically endorsed by AniList_
 - Allowing to screenshots through a button (CORS problems)
 - Tournament Mode :thinking:
 - Duel Mode :doublethinking:
-- Addiotional Search Modes = Seasonals
+- Additional Search Modes = Seasonals
 
 # Known Bugs
 
-- It's possible to mix animanga entrys and characters but I see no reason to remove this
 - Firefox: Rank Text (S, A, B, etc.) is not centered
+- Little shake when you start to drag a card from the card pool
+- If you save your progress with row editor menus open, upon loading that save they'll stay open and display wrong values, close and open them again to fix this
 
 # Changelog
 
-
+- `2023/02/10` - _V1.5.1_
+  - Changes to search function
+    - Anime and Manga searches are now seperated
+    - It is now possible to import whole lists
+      - Anime lists will only import entries flagged as completed, repeating or paused
+      - Manga lists will additionally import entries flagged as reading
+  - Further imrpovment to the drag and drop behaviour
+  - Improved card-name and image display
+  - Fixed a bug that caused the row editor to not display its proper values after loading a saved state
 - `2023/02/09` - _V1.5_
   - Changes to navigation behaviour
   - Changes to card images and names
   - Changes to drag and drop behaviour
   - Fixed a bug that killed the row edit buttons after loading previously saved tierlists
-  - Known Bugs:
-    - Dragging cards back to the pool might cause stuttering
-    - After loading previously saved tierlists the row editor doesn't display proper values
 - `2022/02/07` - _V1.4_
   - Changed query types
   - More ways to search for stuff now

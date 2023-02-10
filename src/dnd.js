@@ -2,21 +2,38 @@ const cardPool = document.getElementById("card-pool");
 const poolIcons = document.querySelectorAll(".pool-icon");
 let items = document.querySelectorAll(".card");
 let boxes = document.querySelectorAll(".card-box");
+let isDrawerOpen = true;
+
+function toggleDrawer(ev) {
+  if (isDrawerOpen) {
+    cardPool.classList.remove("out");
+    cardPool.classList.add("half");
+    isDrawerOpen = false;
+  } else if (!isDrawerOpen) {
+    cardPool.classList.remove("half");
+    cardPool.classList.add("out");
+    isDrawerOpen = true;
+  }
+  ev.stopPropagation();
+}
 
 function handleDragStart(ev) {
   this.style.opacity = "0.4";
   dragSrcEl = this;
   ev.dataTransfer.effectAllowed = "move";
   ev.dataTransfer.setData("text/plain", ev.target.id);
+
+  if (isDrawerOpen) {
+    toggleDrawer(ev);
+  }
 }
 
 function handleDragEnd(ev) {
   this.style.opacity = "1";
 
-  if (cardPool.classList.contains("half")) {
-    cardPool.classList.remove("half");
-    cardPool.classList.add("out");
-  } 
+  if (!isDrawerOpen) {
+    toggleDrawer(ev);
+  }
 
   boxes.forEach(function (box) {
     box.classList.remove("over");
@@ -40,7 +57,9 @@ function handleDragEnter(ev) {
 }
 
 function handleDragLeave(ev) {
-  this.classList.remove("over");
+  if (!ev.currentTarget.contains(ev.fromElement)) {
+    this.classList.remove("over");
+  }
 }
 
 function handleDrop(ev) {
@@ -58,21 +77,23 @@ function handleDrop(ev) {
   } else if (ev.currentTarget.classList.contains("card-box")) {
     let data = ev.dataTransfer.getData("text/plain");
     ev.currentTarget.appendChild(document.getElementById(data));
-  } 
+  }
 
   return false;
 }
-function handleDragOverPool(ev) {
-  if (ev.currentTarget.classList.contains("half")) {
-    cardPool.classList.remove("half");
-    cardPool.classList.add("out");
-  } 
+function handleDragEnterPool(ev) {
+  if (!ev.currentTarget.contains(ev.fromElement)) {
+    if (!isDrawerOpen) {
+      toggleDrawer(ev);
+    }
+  }
 }
 function handleDragLeavePool(ev) {
-  if (ev.currentTarget.classList.contains("out")) {
-    cardPool.classList.remove("out");
-  cardPool.classList.add("half");
-  } 
+  if (!ev.currentTarget.contains(ev.fromElement)) {
+    if (isDrawerOpen) {
+      toggleDrawer(ev);
+    }
+  }
 }
 
 function refreshEventListeners() {
@@ -91,7 +112,7 @@ function refreshEventListeners() {
   });
 
   cardPool.addEventListener("dragleave", handleDragLeavePool);
-  cardPool.addEventListener("dragover", handleDragOverPool);
+  cardPool.addEventListener("dragenter", handleDragEnterPool);
 }
 
 function handleMenu() {

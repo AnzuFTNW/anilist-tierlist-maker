@@ -122,6 +122,8 @@ body {
 .tag {
   word-wrap: break-word;
   text-align: center;
+  max-width: calc(100% - 8px);
+  max-height: calc(100% - 8px);
 }
 #tierlist .card-box {
   display: flex;
@@ -310,30 +312,39 @@ body {
   position: relative;
   width: 100px;
 }
-.card-name {
+.card-name-wrapper {
+  display: flex;
   align-self: flex-end;
+  position: absolute;
   background: var(--color-background-transparent);
   border-radius: 8px;
+  width: calc(100% - 8px);
+  max-height: 38px;
+  padding: 4px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  justify-content: center;
+}
+.card-name-wrapper:hover {
+  overflow: scroll;
+  max-height: calc(100% - 8px);
+}
+.card-name {
   font-size: 12px;
   font-weight: bold;
-  margin: 4px;
-  padding: 3px;
-  position: absolute;
   text-align: center;
-  max-height: 38px;
-  /* min-height: 38px; */
-  width: 92px;
+  width: calc(100% - 8px);
   overflow: hidden;
-  line-height: 1.4em;
+  text-shadow: 1px 1px 5px black;
 }
 .card-name:hover {
   overflow: scroll;
-  max-height: 144px;
 }
+
 .card-image {
   border-radius: 8px;
-  max-width: 100px;
-  object-fit: cover;
+  width: 100px;
+  object-fit: fill;
   background-color: var(--color-background-transparent);
 }
 
